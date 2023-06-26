@@ -34,6 +34,10 @@ export function getRoutes(): Routes {
             loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
           },
           {
+            path: 'search',
+            loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
+          },
+          {
             path: 'profile',
             loadComponent: () => import('./components/large/profile/profile.component').then(mod => mod.ProfileComponent),
           },
