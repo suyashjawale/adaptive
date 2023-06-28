@@ -27,6 +27,7 @@ export function getRoutes(): Routes {
     return [
       {
         path: '',
+        pathMatch:'full',
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
