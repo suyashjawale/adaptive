@@ -31,22 +31,27 @@ export function getRoutes(): Routes {
         children: [
           {
             path: '',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
           },
           {
             path: 'search',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
             path: 'profile',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/profile/profile.component').then(mod => mod.ProfileComponent),
           },
           {
             path: 'wishlist',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/wishlist/wishlist.component').then(mod => mod.WishlistComponent),
           },
           {
             path: 'cart',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/cart/cart.component').then(mod => mod.CartComponent),
           }
         ]
