@@ -27,7 +27,6 @@ export function getRoutes(): Routes {
     return [
       {
         path: '',
-        pathMatch:'full',
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
@@ -37,7 +36,7 @@ export function getRoutes(): Routes {
           },
           {
             path: 'search',
-            pathMatch:'full',
+            pathMatch:'prefix',
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
