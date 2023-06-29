@@ -26,32 +26,27 @@ export function getRoutes(): Routes {
   // else {
     return [
       {
-        path: '',
+        path: 'main',
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
-            path: '',
-            pathMatch:'full',
+            path: 'home',
             loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
           },
           {
             path: 'search',
-            pathMatch:'prefix',
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
             path: 'profile',
-            pathMatch:'full',
             loadComponent: () => import('./components/large/profile/profile.component').then(mod => mod.ProfileComponent),
           },
           {
             path: 'wishlist',
-            pathMatch:'full',
             loadComponent: () => import('./components/large/wishlist/wishlist.component').then(mod => mod.WishlistComponent),
           },
           {
             path: 'cart',
-            pathMatch:'full',
             loadComponent: () => import('./components/large/cart/cart.component').then(mod => mod.CartComponent),
           }
         ]
