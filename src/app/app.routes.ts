@@ -26,15 +26,22 @@ export function getRoutes(): Routes {
   // else {
     return [
       {
-        path: 'main',
+        path: '',
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
+            path: '',
+            redirectTo:'home',
+            pathMatch:'full'
+          },
+          {
             path: 'home',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
           },
           {
             path: 'search',
+            pathMatch:'full',
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
