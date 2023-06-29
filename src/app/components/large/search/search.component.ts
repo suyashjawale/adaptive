@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { CardComponent } from '../card/card.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-search',
   standalone: true,
-  imports: [CommonModule,CardComponent],
+  imports: [CommonModule,CardComponent,RouterOutlet],
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.css']
 })

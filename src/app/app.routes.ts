@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-
-export const routes: Routes = [];
+// import { MainComponent } from './components/large/main/main.component';
+// import { SearchComponent } from './components/large/search/search.component';
 
 export function getRoutes(): Routes {
   // if (window.innerWidth < 768) {
@@ -26,27 +26,17 @@ export function getRoutes(): Routes {
   // else {
     return [
       {
-        path:'',
-        redirectTo:'l',
-        pathMatch:'full'
-      },
-      {
-        path: 'l',
+        path: '',
+        // component: MainComponent,
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
             path: '',
-            redirectTo:'home',
-            pathMatch:'full'
-          },
-          {
-            path: 'home',
-            pathMatch:'full',
             loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
           },
           {
             path: 'search',
-            pathMatch:'full',
+            // component:SearchComponent
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
