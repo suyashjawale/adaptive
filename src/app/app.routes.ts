@@ -26,7 +26,12 @@ export function getRoutes(): Routes {
   // else {
     return [
       {
-        path: '',
+        path:'',
+        redirectTo:'l',
+        pathMatch:'full'
+      },
+      {
+        path: 'l',
         loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
         children: [
           {
