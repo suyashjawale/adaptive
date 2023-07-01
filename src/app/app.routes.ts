@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-// import { MainComponent } from './components/large/main/main.component';
-// import { SearchComponent } from './components/large/search/search.component';
+import { MainComponent } from './components/large/main/main.component';
+import { HomeComponent } from './components/large/home/home.component';
 
 export function getRoutes(): Routes {
   // if (window.innerWidth < 768) {
@@ -27,12 +27,11 @@ export function getRoutes(): Routes {
     return [
       {
         path: '',
-        // component: MainComponent,
-        loadComponent: () => import('./components/large/main/main.component').then(mod => mod.MainComponent),
+        component: MainComponent,
         children: [
           {
             path: '',
-            loadComponent: () => import('./components/large/home/home.component').then(mod => mod.HomeComponent),
+            component:HomeComponent
           },
           {
             path: 'search',

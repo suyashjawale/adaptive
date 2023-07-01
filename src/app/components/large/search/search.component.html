@@ -7,6 +7,13 @@
 
 		<div class="d-flex justify-content-end my-2 gap-2">
 
+			<select class="form-select w-25 rounded-pill shadow-none border-dark" aria-label="Default select example">
+				<option selected>Relevance</option>
+				<option value="1">Price : Low to High</option>
+				<option value="2">Price : High to Low</option>
+				<option value="3">New Arrivals</option>
+			  </select>
+
 			<button class="btn btn-outline-dark rounded-pill px-4 filter_button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
 				<svg width="1.44rem" height="1.44rem" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<g id="SVGRepo_bgCarrier" stroke-width="0"></g>
@@ -79,14 +86,14 @@
 			  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
 				<div class="accordion-body px-0">
 					<div class="mb-3 d-flex justify-content-end">
-						<select class="form-select shadow-none rounded-pill text-center" aria-label="example">
+						<select class="form-select shadow-none rounded-pill" aria-label="example">
 							<option selected>Min</option>
 							<option value="1">One</option>
 							<option value="2">Two</option>
 							<option value="3">Three</option>
 						</select>
 						<div class="mx-2 align-self-center">To</div>
-						<select class="form-select shadow-none rounded-pill text-center" aria-label="example">
+						<select class="form-select shadow-none rounded-pill" aria-label="example">
 							<option selected>Max</option>
 							<option value="1">One</option>
 							<option value="2">Two</option>
