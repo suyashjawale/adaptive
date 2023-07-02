@@ -1,9 +1,0 @@
-.filter_button svg {
-    stroke: #212529 !important;
-    transition: stroke .15s ease-in-out;
-}
-
-.filter_button:hover svg{
-    stroke: white !important;
-}
-

@@ -11,3 +11,54 @@ body {
 .font-600 {
     font-weight: 600 !important;
 }
+
+.border-purple {
+    border-color: #6610f2 !important;
+}
+
+.color_block{
+    border-color: white !important;
+    transition: border-color .15s ease-in-out;
+}
+
+
+.color_block:hover{
+    border-color: #d1d1d1 !important;
+}
+
+.filter_button svg {
+    stroke: #212529 !important;
+    transition: stroke .15s ease-in-out;
+}
+
+.filter_button:hover svg{
+    stroke: white !important;
+}
+
+.color_input[type="checkbox"]:checked+label{
+    border-color: #6610f2 !important;
+}
+
+.purple_checkbox {
+    border-color: #212529 !important;
+}
+
+/* .purple_checkbox:hover {
+    background-color: #212529 !important;
+} */
+
+.purple_checkbox:checked{
+    background-color: #212529 !important;
+}
+
+.extra-small-text {
+    font-size: x-small !important;
+}
+
+.bg-custom-gray {
+    background-color: rgb(240, 240, 240) !important;
+}
+
+.category-fil-item:hover{
+    background-color: rgb(240, 240, 240) !important;
+}

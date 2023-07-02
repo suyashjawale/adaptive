@@ -35,7 +35,6 @@ export function getRoutes(): Routes {
           },
           {
             path: 'search',
-            // component:SearchComponent
             loadComponent: () => import('./components/large/search/search.component').then(mod => mod.SearchComponent),
           },
           {
@@ -49,6 +48,10 @@ export function getRoutes(): Routes {
           {
             path: 'cart',
             loadComponent: () => import('./components/large/cart/cart.component').then(mod => mod.CartComponent),
+          },
+          {
+            path: 'category',
+            loadComponent: () => import('./components/large/category/category.component').then(mod => mod.CategoryComponent),
           }
         ]
       }
