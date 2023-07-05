@@ -62,3 +62,71 @@ body {
 .category-fil-item:hover{
     background-color: rgb(240, 240, 240) !important;
 }
+
+.scrollable-div {
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #b1b1b1 #ececec;
+  }
+  
+  .scrollable-div::-webkit-scrollbar {
+    height: 0.30rem !important;
+  }
+  
+  .scrollable-div::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background-color: #ececec;
+  }
+  
+  .scrollable-div::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: #b1b1b1;
+  }
+  
+  .scrollable-div .card {
+    flex: 0 0 auto;
+    width: 19.28rem;
+  }
+  
+  /* ________________________________ */
+  
+  .image-banner {
+    height: 30rem;
+  }
+  
+  .image-banner img {
+    animation: scroll 60s infinite alternate ease-in-out;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(calc(-100% + 100vw));
+    }
+  }
+  
+/* _____________________________________________________ */
+
+.product-image{
+    height: 32rem;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    scrollbar-color: #b1b1b1 #ececec;
+}
+
+
+.product-image::-webkit-scrollbar {
+  height: 0.30rem !important;
+}
+
+.product-image::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background-color: #ececec;
+}
+
+.product-image::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #b1b1b1;
+}

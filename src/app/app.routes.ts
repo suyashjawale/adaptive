@@ -52,6 +52,10 @@ export function getRoutes(): Routes {
           {
             path: 'category',
             loadComponent: () => import('./components/large/category/category.component').then(mod => mod.CategoryComponent),
+          },
+          {
+            path: 'product',
+            loadComponent: () => import('./components/large/product/product.component').then(mod => mod.ProductComponent),
           }
         ]
       }

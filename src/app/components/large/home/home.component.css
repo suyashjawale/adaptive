@@ -1,4 +1,4 @@
-.scrollable-div {
+/* .scrollable-div {
   overflow-x: scroll;
   scrollbar-width: thin;
   scrollbar-color: #b1b1b1 #ececec;
@@ -21,11 +21,11 @@
 .scrollable-div .card {
   flex: 0 0 auto;
   width: 19.28rem;
-}
+} */
 
 /* ________________________________ */
 
-.image-banner {
+/* .image-banner {
   height: 30rem;
 }
 
@@ -40,4 +40,4 @@
   100% {
     transform: translateX(calc(-100% + 100vw));
   }
-}
+} */
