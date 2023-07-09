@@ -125,6 +125,13 @@ body {
   object-position: center;
 }
 
+/* .ssw{
+    border-style: solid;
+    border-color: rgba(0,0,0,.01);
+    border-width: 35px;
+    border-image: url(https://content.mahattaart.com/products/whole_frame_image_ML-065-GR.jpg) 145 / 1 / 0 stretch;
+} */
+
 #slider label {
   margin: auto;
   width: 72%;
@@ -165,7 +172,7 @@ body {
 
 #s1:checked~#slide2,
 #s2:checked~#slide3,
-#s3:checked~#slide3,
+#s3:checked~#slide4,
 #s4:checked~#slide5,
 #s5:checked~#slide1 {
 
