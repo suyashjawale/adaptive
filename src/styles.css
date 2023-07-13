@@ -36,16 +36,12 @@ body {
 }
 
 .color_input[type="checkbox"]:checked+label {
-  border-color: #6610f2 !important;
+  border-color: #212529 !important;
 }
 
 .purple_checkbox {
   border-color: #212529 !important;
 }
-
-/* .purple_checkbox:hover {
-    background-color: #212529 !important;
-} */
 
 .purple_checkbox:checked {
   background-color: #212529 !important;
@@ -186,4 +182,28 @@ body {
 #s5:checked~#slide2 {
 
   transform: translate3d(30%, 0, -200px);
+}
+
+.heart svg {
+  fill: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.heart:hover svg {
+  transform: scale(1.3);
+}
+
+.heart:focus svg {
+  fill: #ff0000;
+}
+
+/* ---------------------------------------------- */
+
+.frame_radio {
+  border-color: white !important;
+  transition: border-color .15s ease-in-out;
+}
+
+.frame_radio[type="radio"]:checked+label {
+  border-color: #212529 !important;
 }
