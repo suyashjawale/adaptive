@@ -12,10 +12,6 @@ body {
   font-weight: 600 !important;
 }
 
-.border-purple {
-  border-color: #6610f2 !important;
-}
-
 .color_block {
   border-color: white !important;
   transition: border-color .15s ease-in-out;
@@ -206,4 +202,8 @@ body {
 
 .frame_radio[type="radio"]:checked+label {
   border-color: #212529 !important;
+}
+
+.badge > a {
+  color: inherit;
 }
